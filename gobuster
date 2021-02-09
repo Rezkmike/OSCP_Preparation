@@ -1,0 +1,11 @@
+1. URL Path
+--> gobuster dir -u https://10.10.10.10 -w /usr/share/wordlists/directory/medium.txt
+
+2. Subdomain
+--> gobuster dns -d google.com -w ~/wordlists/subdomains.txt
+
+3. Fuzzing
+--> gobuster fuzz -u https://example.com?FUZZ=test -w parameter-names.txt
+
+4. Reference
+--> https://github.com/OJ/gobuster
